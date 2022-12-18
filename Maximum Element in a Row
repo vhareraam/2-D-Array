@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,j,n,c,r;
+    cin>>n;
+    cin>>r;
+    int a[n][r];
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<r;j++)
+        {
+            cin>>a[i][j];
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<r;j++)
+        {
+            if(a[0][0]<a[i][j])
+            {
+               
+                a[0][0]=a[i][j];
+                 
+            }  
+        }cout<<a[0][0]<<endl;a[0][0]=0; 
+        
+    }
+}
+
