@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,j,n,c,r,k=0;
+    cin>>n;
+    cin>>r;
+    int a[n][r];
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<r;j++)
+        {
+            cin>>a[i][j];
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<r;j++)
+        {
+            k=k+a[i][j];
+        }cout<<k<<endl;k=0;
+        
+    }
+}
+
